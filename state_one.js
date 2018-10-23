@@ -1,6 +1,8 @@
 function stateOne(){
     // can change this so the location of the water can be easily animated, rather than fixed
 
+    this.title = "negative buoyancy"
+
     if (trans==0){
         p=1;
     } else if (trans==1){
@@ -41,10 +43,10 @@ function stateOne(){
         fill(0);
         textSize(40);
         if (yvar <height/4 && trans==0){
-            text("test title", width/2,yvar+p);
+            text(this.title, width/2,yvar+p);
             yvar=yvar+2;
         } else {
-            text("test title", width/2,yvar+p);
+            text(this.title, width/2,yvar+p);
             }
         }
     if(frameCount>150 && c2Space>100 && trans==0){
